@@ -1,0 +1,60 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling for a fullscreen effect */
+  }
+  
+  /* Video Container */
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensures video stays in the background */
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire screen */
+  }
+  
+  /* Overlay Content */
+  .overlay {
+    position: absolute;
+    top: 20px; /* Adjust distance from top */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1; /* Sits on top of the video */
+    color: rgb(255, 255, 255);
+    text-shadow: aqua 1px 0 10px;
+  }
+  
+  .overlay h1 {
+    letter-spacing: 3px;
+  }
+  
+  .overlay p {
+    font-size: 1.5rem;
+  }
+
+  .car-img {
+    width: 150px;
+    transition: transform 1s ease-in-out; /* Smooth animation for movement */
+  }
+  
+  .car-img.move {
+    transform: translateX(500px); /* Moves the car to the right */
+  }
+  

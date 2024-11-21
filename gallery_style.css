@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #010202; /* Dark background */
+  color: #D8BB92; /* Light beige text */
+}
+
+/* Banner Styles */
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; /* Ensure overlay text appears above the image */
+}
+.banner h1, .banner p {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #D8BB92; /* Light cream color for contrast */
+  margin: 0;
+  background-color: #0102029e;
+  border-radius: 10px;
+  text-shadow: #FADEB2 1px 0 10px;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  color: #D8BB92; /* Light cream color for the subtitle */
+  margin-top: 10px;
+}
+
+/* Section Styles */
+section {
+  padding: 5rem 0;
+}
+
+#car-gallery {
+  background-color: #2A2F2F; /* Dark grayish background */
+}
+
+#car-gallery h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #D8BB92; /* Light cream color for the main title */
+  text-shadow: #2A2F2F 4px 4px 5px;
+}
+
+#car-gallery .row {
+  margin-bottom: 2rem;
+}
+
+/* Styling for Car Titles */
+#car-gallery h3 {
+  font-size: 1.8rem;
+  color: #2A2F2F; /* Light cream color for car section titles */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+/* Card Styles */
+#car-gallery .card {
+  background-color: #2E4146; /* Muted dark blue-gray for cards */
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#car-gallery .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#car-gallery .card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+#car-gallery .card-body {
+  padding: 1.5rem;
+  background-color: #404C4E; /* Slightly lighter than card background */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #FADEB2; /* Muted greenish-gray text */
+    font-weight: bold;
+  }
+.card-text {
+  font-size: 1rem;
+  color: #b3bcbc; /* Muted greenish-gray text */
+}
+
+/* Slideshow Styles */
+.carousel-inner {
+  border-radius: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #FADEB2;
+  padding: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #463E34; /* Brownish dark color */
+  color: #D8BB92;
+  padding: 2rem 0;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #D8BB92;
+}
+
+footer a {
+  color: #768484; /* Muted greenish-gray for footer links */
+}
+
+footer a:hover {
+  color: #FADEB2; /* Light cream color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 300px;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+}

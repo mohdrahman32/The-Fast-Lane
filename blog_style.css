@@ -1,0 +1,151 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('images/hypercar-hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  }
+  
+  .hero-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-link i {
+    margin-right: 8px;
+    font-size: 1.3rem;
+  }
+  
+  /* Blog Section */
+  .blog-section h2,
+  .events-section h2 {
+    font-size: 2.5rem;
+    color: #212529;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .blog-section h2::after,
+  .events-section h2::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #ff4500;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  
+  .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    border-radius: 10px 10px 0 0;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+  }
+  
+  .card-title {
+    color: #ff4500;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .card a.btn {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card a.btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .card a.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .card a.btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  .card a.btn-success:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Events Section */
+  .events-section {
+    margin-top: 50px;
+  }
+  
+  .events-section .card {
+    border: 2px solid #007bff;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #212529;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-link {
+      font-size: 1.2rem;
+    }
+  }
+  

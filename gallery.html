@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | The Fast Lane</title>
+  <link rel="icon" href="favicon_io/tfl.png" type="image/x-icon" />  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="gallery_style.css">
+  <!-- FontAwesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Page Banner -->
+  <div class="banner">
+    <img src="images/car-gallery-banner.png" alt="Car Gallery Banner" class="img-fluid">
+    <div class="overlay">
+      <h1 class="text-white">Car Gallery</h1>
+      <p class="text-white">Explore the World of Hypercars</p>
+    </div>
+  </div>
+
+  <!-- Car Gallery -->
+  <section id="car-gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Car Gallery</h2>
+
+      <!-- Ferrari Section -->
+      <div id="ferrari" class="row mb-5">
+        <h3 class="text-center mb-4">Ferrari</h3>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/ferrari-sf90.avif" class="card-img-top" alt="Ferrari">
+            <div class="card-body">
+              <h5 class="card-title">Ferrari SF90</h5>
+              <p class="card-text">Experience the cutting-edge hybrid technology with the Ferrari SF90, blending power with efficiency.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bugatti Section -->
+      <div id="bugatti" class="row mb-5">
+        <h3 class="text-center mb-4">Bugatti</h3>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/bugatti-chiron.jpg" class="card-img-top" alt="Bugatti">
+            <div class="card-body">
+              <h5 class="card-title">Bugatti Chiron</h5>
+              <p class="card-text">The Bugatti Chiron redefines speed and luxury. A masterpiece in automotive engineering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- McLaren Section -->
+      <div id="mclaren" class="row mb-5">
+        <h3 class="text-center mb-4">McLaren</h3>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/mclaren.webp" class="card-img-top" alt="McLaren">
+            <div class="card-body">
+              <h5 class="card-title">McLaren 720S</h5>
+              <p class="card-text">A true track-ready hypercar, the McLaren 720S delivers precision and thrill at every turn.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slideshow -->
+      <div id="carSlideshow" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/rimac-nevera.jpg" class="d-block w-100" alt="Rimac Nevera">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Rimac Nevera: A Game-Changer in EV Performance</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/lamborghini.avif" class="d-block w-100" alt="Lamborghini Aventador">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lamborghini Aventador: The Ultimate Combustion Machine</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/porsche.webp" class="d-block w-100" alt="Porsche 911">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Porsche 911: Timeless Performance</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carSlideshow" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carSlideshow" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 The Fast Lane. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

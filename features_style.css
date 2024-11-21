@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h4 {
+    font-weight: bold;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+  }
+  
+  /* Section Headings */
+  section h2 {
+    color: #2a9d8f;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  section p {
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Images Section */
+  #images img {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Key Specifications Section */
+  #key-specs h4 {
+    color: #e76f51;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  #key-specs h4 i {
+    margin-right: 10px;
+  }
+  
+  #key-specs p {
+    margin-left: 30px;
+    color: #444;
+  }
+  
+  /* Review Section */
+  #review-section blockquote {
+    font-style: italic;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-left: 5px solid #2a9d8f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  #review-section blockquote footer {
+    text-align: right;
+    color: #555;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Owner Insights Section */
+  #owner-insights blockquote {
+    font-style: italic;
+    color: #555;
+    font-size: 1.2rem;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #owner-insights iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2a9d8f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    #images img {
+      margin-bottom: 20px;
+    }
+  
+    #key-specs h4, #review-section blockquote, #owner-insights blockquote {
+      font-size: 1.2rem;
+    }
+  }
+  

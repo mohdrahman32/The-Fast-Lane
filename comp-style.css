@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #2B333B; /* Dark Charcoal for text */
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: #291018; /* Dark Burgundy */
+  }
+  
+  .navbar .navbar-brand {
+    color: #69A4AE; /* Light Blue */
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: #6C4A3F; /* Muted Red */
+  }
+  
+  .navbar .navbar-toggler-icon {
+    background-color: #69A4AE; /* Light Blue */
+  }
+  
+  .navbar .nav-link {
+    color: #69A4AE; /* Light Blue */
+    font-size: 1.1rem;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #6C4A3F; /* Muted Red */
+  }
+  
+  /* Hero Section with Background */
+  .hero-section {
+    background-image: url('hero.jpg'); /* Replace with actual hero image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+  }
+  
+  .hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px); /* Blurred background */
+  }
+  
+  .hero-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section .btn {
+    background-color: #69A4AE; /* Light Blue */
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+  }
+  
+  .hero-section .btn:hover {
+    background-color: #6C4A3F; /* Muted Red */
+  }
+  
+  /* Comparison Section */
+  #comparison {
+    background-color: #2B333B; /* Dark Charcoal */
+    padding: 50px 0;
+    border-radius: 10px;
+    color: #69A4AE; /* Light Blue for text */
+  }
+  
+  #comparison h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #69A4AE; /* Light Blue */
+    margin-bottom: 30px;
+  }
+  
+  .form-label {
+    color: #69A4AE; /* Light Blue */
+    font-weight: bold;
+  }
+  
+  .form-select {
+    border-radius: 5px;
+    border: 2px solid #6C4A3F; /* Muted Red */
+  }
+  
+  .form-select:focus {
+    border-color: #69A4AE; /* Light Blue */
+    box-shadow: 0 0 5px rgba(105, 164, 174, 0.8);
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #6C4A3F; /* Muted Red */
+    border-color: #6C4A3F; /* Muted Red */
+  }
+  
+  .btn-primary:hover {
+    background-color: #69A4AE; /* Light Blue */
+    border-color: #69A4AE; /* Light Blue */
+  }
+  
+  /* Comparison Result Section */
+  #comparison-result h3 {
+    color: #69A4AE; /* Light Blue */
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  #comparison-result .col-md-4 h4 {
+    color: #291018; /* Dark Burgundy */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  #comparison-result .col-md-4 table {
+    background-color: #2B333B; /* Dark Charcoal */
+    color: #69A4AE; /* Light Blue */
+  }
+  
+  #comparison-result .col-md-4 th,
+  #comparison-result .col-md-4 td {
+    text-align: left;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+  
+  #comparison-result .col-md-4 th {
+    background-color: #6C4A3F; /* Muted Red */
+    color: #69A4AE; /* Light Blue */
+  }
+  
+  #comparison-result .col-md-4 td {
+    background-color: #291018; /* Dark Burgundy */
+  }
+  
+  /* Image Styling */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #291018; /* Dark Burgundy */
+    padding: 20px 0;
+    text-align: center;
+    color: #69A4AE; /* Light Blue */
+  }
+  
+  footer a {
+    color: #69A4AE; /* Light Blue */
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #6C4A3F; /* Muted Red */
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section p {
+      font-size: 1.1rem;
+    }
+  
+    .hero-section .btn {
+      padding: 12px 25px;
+    }
+  
+    .navbar .navbar-brand {
+      font-size: 1.5rem;
+    }
+  
+    #comparison h2 {
+      font-size: 1.5rem;
+    }
+  
+    #comparison-result h3 {
+      font-size: 1.5rem;
+    }
+  
+    #comparison-result .col-md-4 table {
+      font-size: 1rem;
+    }
+  
+    .navbar .nav-link {
+      font-size: 1rem;
+    }
+  }
+  

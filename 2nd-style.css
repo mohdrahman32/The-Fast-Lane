@@ -1,0 +1,163 @@
+/* Define the color palette from Coolors */
+:root {
+    --color-1: #656f6e; /* Grayish Green */
+    --color-2: #558591; /* Muted Blue */
+    --color-3: #291018; /* Dark Burgundy */
+    --color-4: #2c2128; /* Darker Burgundy */
+    --color-5: #d6dfce; /* Light Olive Green */
+    --color-6: #1f1c28; /* Charcoal */
+    --color-7: #3f6771; /* Deep Teal */
+    --color-8: #69a4ae; /* Light Blue */
+  }
+  
+  /* Body and Base Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-6);
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0;
+  }
+  
+  .hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-section .container {
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--color-5); /* Light Olive Green */
+  }
+  
+  .hero-section .btn {
+    background-color: #3f67714a;
+    color: white;
+    border: 2px solid #291018;
+    
+  }
+  
+  .hero-section .btn:hover {
+    background-color: var(--color-1);
+    box-shadow: 2px 2px 20px #69a4ae;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--color-3);
+  }
+  
+  .navbar .navbar-brand {
+    color: var(--color-5);
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: var(--color-5);
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: var(--color-8);
+  }
+  
+  /* Introduction Section */
+  #introduction {
+    background-color: var(--color-2);
+    padding: 60px 0;
+  }
+  
+  #introduction h2 {
+    color: var(--color-5);
+  }
+  
+  #introduction p {
+    color: var(--color-5);
+    font-size: 1.2rem;
+  }
+  
+  /* Trending Models Section */
+  #trending-models {
+    background-color: var(--color-4);
+    padding: 60px 0;
+  }
+  
+  #trending-models h2 {
+    color: var(--color-6);
+    font-size: 2.5rem;
+    text-shadow: #558591 1px 0 10px; ;
+  }
+  
+  .card {
+    background-color: var(--color-6);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px #3f6771;
+  }
+  
+  .card-title {
+    color: var(--color-5);
+    font-size: 1.5rem;
+  }
+  
+  .card-text {
+    color: var(--color-5);
+    font-size: 1rem;
+  }
+  
+  .card .btn {
+    background-color: var(--color-7);
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .card .btn:hover {
+    background-color: var(--color-8);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--color-3);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section .btn {
+      font-size: 1rem;
+    }
+  }
+  
+
+  .navbar .nav-link i {
+    font-size: 1.2rem; /* Adjust the icon size */
+    margin-right: 8px; /* Space between icon and text */
+    color: var(--color-5); /* Light Olive Green */
+  }
+  
+  .navbar .nav-link:hover i {
+    color: var(--color-8); /* Light Blue when hovered */
+  }
+  

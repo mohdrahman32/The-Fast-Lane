@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Car - Bugatti Divo</title>
+  <link rel="icon" href="favicon_io/tfl.png" type="image/x-icon" />  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="fav_style.css">
+  <style>
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      background-image: url('images/hero.png');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      text-align: center;
+      color: white;
+    }
+    .hero-section .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-section h1 {
+      font-weight: bold;
+      font-size: 5rem;
+      position: relative;
+      z-index: 2;
+      opacity: 0.8;
+      color: black;
+      text-shadow: aqua 0px 0 15px;
+    }
+    .hero-section .hero-link {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+      z-index: 3;
+      font-weight: bold;
+    }
+    .hero-section .hero-link:hover {
+        color: aqua;
+        text-shadow: aqua 1px 0 10px;
+    }
+    /* Body Section */
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    .section-content {
+      margin-bottom: 3rem;
+    }
+    .quote {
+      font-family: 'Arial', sans-serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: #f5a623;
+      margin-top: 3rem;
+    }
+    .card img {
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="overlay"></div>
+    <a href="http://127.0.0.1:5500/2nd-page.html#" class="hero-link">
+      <i class="fas fa-road"></i> The Fast Lane
+    </a>
+    <h1>BUGATTI DIVO</h1>
+  </header>
+
+  <!-- Body Section -->
+  <div class="container my-5">
+    <!-- Introduction Section -->
+    <section class="section-content">
+      <h2 class="section-title text-center">Introduction</h2>
+      <p>The Bugatti Divo is a masterpiece of engineering and artistry, a symphony of power, precision, and audacious design. Unveiled as a tribute to Albert Divo, a racing legend who brought glory to the Bugatti name in the 1920s, this hypercar epitomises exclusivity and exhilaration. With only 40 units ever produced, the Divo is a crown jewel in Bugatti’s pantheon, meticulously tailored for those who demand unparalleled performance and luxury.</p>
+    </section>
+
+    <!-- Specification Section -->
+    <section class="section-content">
+      <h2 class="section-title text-center">Specification</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 style="font-weight: bold;">Performance</h3>
+          <ul>
+            <li>Engine: 8.0-litre quad-turbocharged W16</li>
+            <li>Power Output: 1,500 PS (1,103 kW)</li>
+            <li>Torque: 1,600 Nm (1,180 lb-ft)</li>
+            <li>Top Speed: Electronically limited to 380 km/h (236 mph)</li>
+            <li>Acceleration (0–100 km/h): ~2.4 seconds</li>
+            <li>Lateral Acceleration: 1.6 G</li>
+            <li>Weight Reduction: 35 kg (77 lbs) compared to the Bugatti Chiron</li>
+            <li>Downforce: 456 kg at top speed, 90 kg more than the Chiron</li>
+          </ul>
+          <h3 style="font-weight: bold;">Transmission</h3>
+          <ul>
+            <li>Gearbox: 7-speed dual-clutch automatic</li>
+            <li>Drivetrain: All-Wheel Drive (AWD)</li>
+          </ul>
+          <h3 style="font-weight: bold;">Chassis & Aerodynamics</h3>
+          <ul>
+            <li>Chassis: Lightweight monocoque structure made of carbon fibre</li>
+            <li>Suspension: Adaptive, optimised for cornering dynamics</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3 style="font-weight: bold;">Aerodynamics</h3>
+          <ul>
+            <li>Enlarged front air intakes for better cooling</li>
+            <li>Custom front splitter and rear diffuser for improved airflow</li>
+            <li>Fixed rear wing generating additional downforce</li>
+          </ul>
+          <h3 style="font-weight: bold;">Dimensions</h3>
+          <ul>
+            <li>Length: 4,610 mm</li>
+            <li>Width: 2,038 mm</li>
+            <li>Height: 1,212 mm</li>
+            <li>Wheelbase: 2,711 mm</li>
+            <li>Weight: 1,961 kg (4,324 lbs)</li>
+          </ul>
+          <h3 style="font-weight: bold;">Brakes</h3>
+          <ul>
+            <li>Front Brakes: 420 mm</li>
+            <li>Rear Brakes: 400 mm</li>
+          </ul>
+          <h3 style="font-weight: bold;">Tyres</h3>
+          <ul>
+            <li>Front: 285/30 R20</li>
+            <li>Rear: 355/25 R21</li>
+          </ul>
+          <h3 style="font-weight: bold;">Interior & Features</h3>
+          <ul>
+            <li>Materials: Alcantara, carbon fibre, and titanium with Divo-specific colour accents</li>
+            <li>Infotainment: Minimalist setup tailored for a focused driving experience</li>
+            <li>Seating: Sport seats with enhanced lateral support</li>
+            <li>Customisation: Extensive options for bespoke personalisation</li>
+          </ul>
+          <h3 style="font-weight: bold;">Production</h3>
+          <ul>
+            <li>Units Produced: 40 (all sold before public reveal)</li>
+            <li>Price: Starting at €5 million (£4.3 million approx.)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visuals Section -->
+    <section class="section-content">
+      <h2 class="section-title text-center">Visuals</h2>
+      <div class="row">
+        <!-- Interior Image -->
+        <div class="col-md-4">
+          <h3>Interior</h3>
+          <img src="images/divo-interior.jpg" class="img-fluid" alt="Bugatti Divo Interior">
+        </div>
+        <!-- Exterior Image -->
+        <div class="col-md-4">
+          <h3>Exterior</h3>
+          <img src="images/divo-exterior.jpg" class="img-fluid" alt="Bugatti Divo Exterior">
+        </div>
+        <!-- 360 View Image -->
+        <div class="col-md-4">
+          <h3>360 View</h3>
+          <img src="images/divo-360.jpg" class="img-fluid" alt="Bugatti Divo 360 View">
+          <div class="text-center mt-3">
+            <a href="https://3dmodels.org/360-view/?id=205526&srsltid=AfmBOoqNdpMPPqy6n2VgFdgWEw-vVev9m5BwHAgW9jXuIz6x3_Jy1zS_" class="btn btn-info">360-View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section>
+      <div class="quote">
+        "Braving each storm - the BUGATTI Divo"
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 The Fast Lane. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
